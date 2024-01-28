@@ -23,22 +23,48 @@
 
 
 
-\title{Linux Automated Module Deployment using LLM}
+\title{Latex template for master student at UIT-VNUHCM}
 \proposaltype{Master thesis in Information security}
-\supervisorname{Doctor Le Duy Tan}
+\supervisorname{Prof. Dr Copilot with GPT-4}
 \studentname{Nguyen Hong Son}
+
+% Config reference
+\addbibresource{references/chapter-1.bib}
+\addbibresource{references/chapter-2.bib}
+
+% Begin document
+
 \begin{document}
 \headerbox
 \enproposalheader
 \enproposalname
-
-% Begin main thesis, start page numbering
-\counterwithin{equation}{chapter}
-\counterwithin{table}{chapter}
-\counterwithin{figure}{chapter}
+\clearpage
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
 \setcounter{secnumdepth}{3}
+
+
+\pagestyle{fancy}
 \fancyhf{}
+
 \fancyfoot[C]{\thepage}
+
+\if @twoside
+  \fancyhead[EL,OR]{\bfseries\nouppercase\rightmark}
+\else
+  \fancyhead[R]{\bfseries\nouppercase\rightmark}
+\fi
+
+\input{proposal/section1.tex}
+\input{proposal/section2.tex}
+\input{proposal/section3.tex}
+\input{proposal/section4.tex}
+
+\begingroup
+\let\clearpage\relax
+\printbibliography[heading=bibintoc, title = {References}]
+\endgroup
 
 \end{document}
 

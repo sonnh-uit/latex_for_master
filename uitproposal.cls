@@ -29,6 +29,7 @@
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{subsection}}
 
+% \patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
 \def\headerbox {
     \begin{tikzpicture}[remember picture,overlay]
         \draw[line width=3pt](
@@ -111,6 +112,3 @@
         \vfill
     \end{center}
 }
-
-% \pagestyle{fancy}
-% \fancyhf{}

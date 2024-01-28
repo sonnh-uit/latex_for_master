@@ -26,6 +26,8 @@
 \newcommand{\@studentname}{}
 \newcommand{\studentname}[1]{\renewcommand{\@studentname}{#1}}
 
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
 
 \def\headerbox {
     \begin{tikzpicture}[remember picture,overlay]
@@ -110,54 +112,5 @@
     \end{center}
 }
 
-
-% \begin{center}
-
-%     \begin{center}
-%         \includegraphics[width=0.40\linewidth]{UTILES/Imagenes/nuevologo.png}
-%     \end{center}
-%     \vspace{1cm}
-%         {\fontsize{18}{21}\selectfont {\textbf{ 
-%     UNIVERSIDAD TÉCNICA DEL NORTE
-%     } }} \\
-%     \vspace{0.25cm}
-%      {\fontsize{16}{19}\selectfont {
-%     FACULTAD DE INGENIERÍA EN CIENCIAS APLICADAS
-%      }}
-%     \\
-%     \vspace{0.25cm}
-%     {\fontsize{14}{16}\selectfont {\textbf{ 
-%     \RevisarCampoCarrera
-%     } }}
-%     \\
-%     \vspace{1.5cm}
-%      {\fontsize{12}{12}\selectfont{
-%     TRABAJO DE INTEGRACIÓN CURRICULAR PREVIO A LA OBTENCIÓN DEL TÍTULO DE \hspace{-0.1cm}\titulocarrera 
-%      }}
-%     \\
-%     \vspace{1cm}
-%     {\fontsize{14}{16}\selectfont {\textbf{ 
-%     "\titulotesis" 
-%     } }}
-%     \\
-%     \begin{center}
-%      \includegraphics[width=0.6\linewidth]{UTILES/Imagenes/fica.jpg}
-%     \end{center}
-%     \vspace{0.5cm}
-%      {\fontsize{12}{12}\selectfont {
-%     \textbf{AUTOR: } \nombres 
-%     }}
-%      \\
-%      {\fontsize{12}{12}\selectfont {
-%     \hspace{-1cm}\textbf{DIRECTOR: } \director
-%     }}
-%     \vspace{0.25cm}
-%     \\
-%     Ibarra – Ecuador 
-%     \\
-    
-%     \textbf{\the\year}
-    
-%     \end{center}
-    
-%     }
+% \pagestyle{fancy}
+% \fancyhf{}

@@ -21,26 +21,41 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{makecell}
+\usepackage{lipsum}
 
 
-
-\title{Linux Automated Module Deployment using LLM}
-\vntitle{Triển khai phần mềm tự động trên linux sử dụng mô hình ngôn ngữ lớn}
+\title{Latex template for master student at UIT-VNUHCM}
+\vntitle{Biểu mẫu latex dành cho học viên cao học tại Trường đại học công nghệ thông tin, Đại học quốc gia thành phố Hồ Chí Minh}
 \proposaltype{Luận văn thạc sĩ ngành An toàn thông tin}
-\supervisorname{TS. Lê Duy Tân}
+\supervisorname{GS. TS. Copilot with GPT-4}
 \studentname{Nguyễn Hồng Sơn}
+
 \begin{document}
 \headerbox
 \vnproposalheader
 \vnproposalname
-
-% Begin main thesis, start page numbering
-\counterwithin{equation}{chapter}
-\counterwithin{table}{chapter}
-\counterwithin{figure}{chapter}
+\clearpage
+\mainmatter
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
 \setcounter{secnumdepth}{3}
+
+
+\pagestyle{fancy}
 \fancyhf{}
+
 \fancyfoot[C]{\thepage}
 
+\if @twoside
+  \fancyhead[EL,OR]{\bfseries\nouppercase\rightmark}
+\else
+  \fancyhead[R]{\bfseries\nouppercase\rightmark}
+\fi
+
+
+
+\include{proposal/section1.tex}
+\include{proposal/section2.tex}
 \end{document}
 

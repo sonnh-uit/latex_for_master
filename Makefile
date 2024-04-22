@@ -11,5 +11,5 @@ install_latex:
 build:
 	@echo "Build proposal.tex"
 	pdflatex proposal.tex
-	biber proposal.tex
+	biber proposal
 	pdflatex proposal.tex

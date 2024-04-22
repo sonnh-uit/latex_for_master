@@ -35,6 +35,7 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 
 % Config reference source file
+\addbibresource{references/section1.bib}
 \addbibresource{references/section2.bib}
 
 % Config figure path
@@ -84,8 +85,8 @@
 % =========== Thay đổi thông tin tại phần này ===========
 \upperuniname{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}
 \uniname{TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}
-\title{Đánh giá hiệu năng và tính sẵn sàng của hệ thống Hadoop Distributed File System}
-\titleen{Evaluating the Performance and Scalability of the Ceph Hadoop Distributed File System}
+\title{Đánh giá hiệu năng và tính mở rộng của hệ thống Hadoop Distributed File System}
+\titleen{Evaluating the Performance and Scalability of the Hadoop Distributed File System}
 \supervisorname{TS. LÊ DUY TÂN }
 \stuname{NGUYỄN HỒNG SƠN }
 \proposaltype{Môn chuyên đề nghiên cứu 3}
@@ -110,7 +111,7 @@
 
 
 \mainmatter
-\include{sections/summary.tex}
+\input{sections/summary.tex}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{\thepage}
@@ -121,8 +122,12 @@
 \fi
 
 
-\include{sections/section1.tex}
-\include{sections/section2.tex}
+\input{sections/section1.tex}
+\input{sections/section2.tex}
+\input{sections/section3.tex}
+\input{sections/section4.tex}
+\input{sections/section5.tex}
+\newpage
 \tableofcontents
 \printbibliography[heading=bibintoc, title = {Tài liệu tham khảo}]
 \end{document}

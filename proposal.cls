@@ -3,7 +3,7 @@
 \ProvidesClass{proposal}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions\relax
-\LoadClass[14pt,a4paper]{memoir}
+\LoadClass[13pt,a4paper]{memoir}
 % ========== Require package to setup paper, link, language
 \RequirePackage{anyfontsize,mathptmx}
 \RequirePackage[T5]{fontenc}
@@ -36,7 +36,7 @@
 \renewcommand{\@title}{}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\footrulewidth}{0pt}
-\renewcommand{\large}{\fontsize{15}{15}\selectfont}
+\renewcommand{\large}{\fontsize{14}{14}\selectfont}
 \renewcommand{\Large}{\fontsize{20}{20}\selectfont}
 \renewcommand{\arraystretch}{1.2}
 \renewcommand*{\lstlistingname}{Đoạn mã}
@@ -105,8 +105,8 @@
             \includegraphics[width=0.12\textwidth]{imgs/vnu_logo.png} &
             \begin{minipage}[b]{0.73\textwidth}
                 \centering
-                \textbf{\MakeUppercase{\@upperuniname}} \\
-                \textbf{\MakeUppercase{\@uniname}}
+                \large\textbf{\MakeUppercase{\@upperuniname}} \\
+                \large\textbf{\MakeUppercase{\@uniname}}
             \end{minipage} &
             \includegraphics[width=0.1\textwidth]{imgs/UIT-logo.png} \\
         \end{tabular}

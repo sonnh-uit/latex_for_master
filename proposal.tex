@@ -1,4 +1,4 @@
-\documentclass[final]{hcmuitthesis}
+\documentclass[final]{proposal}
 \usepackage[utf8]{vietnam}
 \usepackage{placeins}
 \usepackage{amsfonts}
@@ -35,7 +35,7 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 
 % Config reference source file
-\addbibresource{references/chapter2.bib}
+\addbibresource{references/section2.bib}
 
 % Config figure path
 \graphicspath{ {./graphics} }
@@ -84,72 +84,45 @@
 % =========== Thay đổi thông tin tại phần này ===========
 \upperuniname{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}
 \uniname{TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}
-\deptname{KHOA MẠNG MÁY TÍNH VÀ TRUYỀN THÔNG}
-\stumajor{KỸ SƯ NGÀNH AN TOÀN THÔNG TIN}
 \title{SỬ DỤNG LATEX TRONG SOẠN THẢO KHÓA LUẬN TỐT NGHIỆP}
 \titleen{USING LATEX IN WRITING GRADUATION THESIS}
-\supervisor{GIẢNG VIÊN HƯỚNG DẪN}
 \supervisorname{PGS. TS. GOOGLE \\ ThS. CHATGPT}
 \stuname{NGUYỄN HỒNG SƠN }
-\stunamewithid{NGUYỄN HỒNG SƠN - 17520988}
-\reporttime{NĂM 2024}
-\reporttype{KHÓA LUẬN TỐT NGHIỆP}
-\instruction{GIẢNG VIÊN HƯỚNG DẪN}
-\reportplace{TP. HỒ CHÍ MINH}
-
+\proposaltype{Luận văn thạc sĩ ngành An toàn thông tin}
 % =========== Hết phần thay đổi thông tin ===========
+
+
 
 % Begin thesis
 \begin{document}
 
 
 
-\coverpage%
-\secondcoverpage%
 
-% Begin above main thesis
-\frontmatter
-\include{chapters/front/decision.tex}
-\include{chapters/front/thanks.tex}
-\tableofcontents
-\clearpage
-\listoffigures
-\clearpage
-\listoftables
-\clearpage
-\lstlistoflistings
-\include{chapters/front/glossaries.tex}
-\include{chapters/front/translate.tex}
-\clearpage
-
+\headerbox
+\vnproposalheader
+\proposalname
 % Begin main thesis, start page numbering
-\counterwithin{equation}{chapter}
-\counterwithin{table}{chapter}
-\counterwithin{figure}{chapter}
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
 \setcounter{secnumdepth}{3}
-\mainmatter
 
-% Config page header
+
+\mainmatter
+\include{sections/summary.tex}
+\pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{\thepage}
-\include{chapters/main/summary.tex}
 \if @twoside
   \fancyhead[EL,OR]{\bfseries\nouppercase\rightmark}
 \else
   \fancyhead[R]{\bfseries\nouppercase\rightmark}
 \fi
 
-% Main chapter in thesis
-\include{chapters/main/chapter1.tex}
-\include{chapters/main/chapter2.tex}
-\include{chapters/main/chapter3.tex}
-\include{chapters/main/chapter4.tex}
 
-
-% Appendix chapter in thesis
-\appendix
-\include{chapters/back/apendixA.tex}
-
-% Print references
+\include{sections/section1.tex}
+\include{sections/section2.tex}
+\tableofcontents
 \printbibliography[heading=bibintoc, title = {Tài liệu tham khảo}]
 \end{document}

@@ -9,7 +9,7 @@ install_latex:
 	sudo apt install texlive-bibtex-extra -y
 	sudo apt install biber -y
 build:
-	@echo "Build thesis"
-	pdflatex thesis.tex
-	biber thesis
-	pdflatex thesis.tex
+	@echo "Build proposal.tex"
+	pdflatex proposal.tex
+	biber proposal.tex
+	pdflatex proposal.tex

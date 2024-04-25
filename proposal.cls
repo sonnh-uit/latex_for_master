@@ -14,7 +14,7 @@
 \RequirePackage[vietnamese,english]{babel}
 \RequirePackage{listings}
 \RequirePackage{graphicx}
-
+\RequirePackage{chngcntr}
 \usetikzlibrary{calc}
 \hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true} 
 
@@ -43,10 +43,14 @@
 \renewcommand\lstlistlistingname{Danh sách đoạn mã}
 \newcommand{\@proposaltype}{}
 \newcommand{\proposaltype}[1]{\renewcommand{\@proposaltype}{#1}}
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand\thesection{\@arabic\c@section}
-
+% \renewcommand{\thesection}{\arabic{section}}
+% % \renewcommand\thesection{\@arabic\c@section}
 \renewcommand{\subsectionmark}[1]{\markright{\thesubsection.\ #1}}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
 % ==========Setup paper margin and footer==========
 \geometry{
   paper=a4paper,

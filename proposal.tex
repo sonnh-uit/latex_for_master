@@ -27,7 +27,7 @@
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{rotating}
-
+\usepackage{chngcntr}
 % Define color and column type
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -92,25 +92,23 @@
 \proposaltype{Môn chuyên đề nghiên cứu 3}
 % =========== Hết phần thay đổi thông tin ===========
 
-
-
 % Begin thesis
 \begin{document}
-
-
 
 
 \headerbox
 \vnproposalheader
 \proposalname
+
 % Begin main thesis, start page numbering
+\mainmatter
 \counterwithin{equation}{section}
 \counterwithin{table}{section}
 \counterwithin{figure}{section}
 \setcounter{secnumdepth}{3}
 
 
-\mainmatter
+
 % \input{sections/summary.tex}
 \pagestyle{fancy}
 \fancyhf{}

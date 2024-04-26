@@ -28,6 +28,8 @@
 \usepackage{longtable}
 \usepackage{rotating}
 \usepackage{chngcntr}
+% \usepackage{background}
+
 % Define color and column type
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -92,6 +94,8 @@
 \proposaltype{Môn chuyên đề nghiên cứu 3}
 % =========== Hết phần thay đổi thông tin ===========
 
+
+
 % Begin thesis
 \begin{document}
 
@@ -99,9 +103,10 @@
 \headerbox
 \vnproposalheader
 \proposalname
-
+\tableofcontents
 % Begin main thesis, start page numbering
 \mainmatter
+% \backgroundsetup{contents=Confidential,placement=center,color=red}
 \counterwithin{equation}{section}
 \counterwithin{table}{section}
 \counterwithin{figure}{section}
@@ -125,8 +130,8 @@
 \input{sections/section3.tex}
 \input{sections/section4.tex}
 \input{sections/section5.tex}
-\input{sections/section6.tex}
+% \input{sections/section6.tex}
 \newpage
-\tableofcontents
+
 \printbibliography[heading=bibintoc, title = {Tài liệu tham khảo}]
 \end{document}

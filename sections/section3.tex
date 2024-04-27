@@ -1,36 +1,6 @@
 \section{Cơ sở lý thuyết và các nghiên cứu liên quan}
 \label{section3-background}
 
-\subsection{Các thành phần của hệ thống}
-\subsubsection{OpenLDAP}
-
-LDAP - Lightweight Directory Access Protocol là một dịch vụ xác thực dạng client-server để truy cập các thư mục trong dịch vụ X.500 nhưng theo thời gian, nó dần độc lập khỏi X.500 và được sử dụng mặc định cho một số hệ điều hành trong quản lý truy cập thư mục. Nó phổ biến bởi các đặc điểm tốt hơn X.500 \cite{johner1998understanding} :
-\begin{itemize}
-    \item LDAP chạy trên TCP/IP chứ không phải trên OSI  protocol stack. TCP/IP ít tốn tài nguyên hơn và phổ biến trên máy tính cá nhân.
-    \item Mô hình chức năng của LDAP đơn giản hơn. Nó bỏ qua các tính năng trùng lặp, hiếm khi được sử dụng.
-    \item LDAP sử dụng chuỗi để biểu diễn dữ liệu thay vì các cú pháp có cấu trúc phức tạp như ASN.1 (Abstract Syntax Notation One).
-\end{itemize}
-
-\subsubsection{Kerberos}
-
-Kerberos là một giao thức xác thực được sử dụng trong hệ thống mạng không an toàn. Nó được Học viện kỹ thuật Massachusetts (MIT), Hoa Kỳ phát triển, sử dụng nội bộ, và sau đó đã được công khai để cộng đồng sử dụng. Kerberos được thiết kế dựa trên giao thức Needham-Schroeder. Nó cung cấp xác thực cho người sử dụng thông qua một khóa phiên tạm thời, sẽ hết hạn sau một thời gian. Sau khoảng này, người dùng phải xác thực lại với máy chủ để nhận khóa phiên mới.
-
-\subsubsection{Hadoop}
-
-Apache Hadoop là một phần mềm quản lý lưu trữ file phân tán và tính toán dữ liệu. Nó được thiết kế để có thể tích hợp nhiều máy chủ vào để tạo thành hệ lưu trữ có tính sẵn sàng cao, chịu lỗi tốt và chi phí rẻ. Giống như các phần mềm được Apache Software Foundation phát triển, nó cho phép sử dụng miễn phí kể cả cho mục đích thương mại. 
-
-\subsubsection{Ranger}
-
-Sau khi Hadoop phát triển và có nhiều người sử dụng, ASF tiếp tục phát triển Apache Ranger nhằm mục đích giám sát, quản lý bảo mật và truy cập trên hệ thống thư mục của Hadoop. Ranger cung cấp giao diện web thân thiện, dễ sử dụng, dễ tích hợp với các thành phần của Hadoop cũng như có nhiều plugin do cộng đồng phát triển.
-
-\subsection{Các nghiên cứu liên quan}
-
-Các phần mềm mã nguồn mở được đề cập ở trên được nhiều người sử dụng, do đó thu hút rất nhiều nghiên cứu. Choi và cộng sự \cite{choi2003enhancing} đã nghiên cứu các giải pháp sử dụng bộ nhớ đệm để tăng hiệu suất của OpenLDAP, khiến nó tăng 126\% thông lượng và giảm 59\% độ trễ. Guta và cộng sự \cite{gupta2018attribute} đề xuất HeABAC, một giải pháp sử dụng attribute-base access control vào Apache Ranger để cung cấp một giải pháp quản lý truy cập cho toàn bộ hệ sinh thái Hadoop. Guo và cộng sự \cite{guo2016ishuffle} đã đề xuất iShuffle, một giải pháp giúp giảm thời gian tính toán tới 30,2\% thông qua việc đẩy dữ liệu từ reduce task tới các node bằng giải thuật shuffle-onwrite và  flexible scheduling.
-
-\subsection{Câu hỏi nghiên cứu}
-
-Các nghiên cứu với Hadoop hiện tại còn rời rạc, chủ yếu chỉ nghiên cứu một vài thành phần trong Hadoop hoặc các thành phần khác có liên quan, mà chưa xem xét tổng thể việc sử dụng chúng đồng thời trong một hệ thống. Các giải pháp sử dụng cơ sở dữ liệu quan hệ để lưu nhật ký từ Ranger chưa xem xét đến tính phức tạp của quản lý, tạo thêm thành phần cho hệ thống. Việc sử dụng cơ chế tạo người dùng trên Ranger chưa xem xét tới việc hầu hết các công ty/tập đoàn lớn (là những nơi đầu tư sử dụng Hadoop lớn nhất) đã có hệ thống xác thực tập trung.
-
-Trong nghiên cứu này, tác giả giới thiệu mô hình quản lý, vận hành, bảo mật và kiểm toán các thao tác trong hệ sinh thái Hadoop, sử dụng OpenLDAP tương thích với hầu hết dịch vụ thư mục khác. Sử dụng Kerberos cho xác thực, tương thích với các dịch vụ Java nói chung và các ứng dụng khác của Apache nói riêng.
-
-Cuối cùng, một số bài kiểm tra hiệu suất được thực hiện nhằm đánh giá các giới hạn của hệ thống, đưa ra những cải tiến cho hệ thống hoặc giới hạn của nó cho từng trường hợp.
+\lipsum
+\lipsum
+\lipsum
